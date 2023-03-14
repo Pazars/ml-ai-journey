@@ -12,24 +12,30 @@ Because the field is moving rapidly, the goal is to focus on applications and le
 
 ## Roadmap
 
-1. Preliminary skills
+1. **Preliminary skills**
 
-    --1. Data exploration and preparation
-    --2. SQL and databases
-    --3. Regression project
-    --4. Classification project
+    1.1 Data exploration and preparation
+    
+    1.2 SQL and databases
+    
+    1.3 Regression project
+    
+    1.4 Classification project
 
-2. Deep learning skills
+2. **Deep learning skills**
 
-    --1. Keras API
-    --2. Tensorflow
-    --3. ?
+    2.1 Keras API
+    
+    2.2 Tensorflow
+    
+    2.3 ?
 
-3. Cloud skills
+3. **Cloud skills**
 
-    --1. Spark
-    --2. ?
+    3.1 Spark
+    
+    3.2 ?
 
-4. CI/CD, MLOps skills
+4. **CI/CD, MLOps skills**
 
 5. Capstone project ?
