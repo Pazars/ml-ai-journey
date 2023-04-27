@@ -33,14 +33,6 @@ Lastly, some features could be useful but were removed for other reasons:
 
 Although there is a significant difference between being late on a payment for less than a month and charging-off, the loan status was reduced to a binary classification problem. Furthermore, because the feature that we are trying to predict is very unevenly distributed, or in other words, because majority of loans are performing, a typical classification metric such as accuracy is not particularly useful. Instead, I am focusing on recall (true positives) / (all predicted positives) and precision (true positives) / (true positives + false positives). In all cases I used either a Random Forest classifier or a gradient-boosted Random Forest classifier and evaluated each model on stratified 5-fold train/validation sets to avoid overfitting. For the gradient-boosted model I also setup early stopping as an additional overfitting counter-measure. With more time I would have experimented with other models.
 
-The initial model in `model.ipynb` focused more on building re-usable functions and getting something to work. If it wasn't clear if a feature is useful or it was difficult to deal with, it was simply dropped. This initial model's performance was not that great but along the way I learned more about all the available features and for the second iteration devised the feature selection described in the previous section. Everything else was conveniently re-used and the second model's performance was pretty good. Below are the Precision-Recall curves for all 5 folds for the best-performing second iteration model.
+The initial model in `model.ipynb` focused more on building re-usable functions and getting something to work. If it wasn't clear if a feature is useful or it was difficult to deal with, it was simply dropped. This initial model's performance was not that great but along the way I learned more about all the available features and for the second iteration devised the feature selection described in the previous section. Everything else was conveniently re-used and the second model's performance was pretty good. Below is the Precision-Recall curve for one of the 5 folds for the best-performing second iteration model.
 
-![res1](../../plots/boosted_it2_fold1.png)
-
-![res2](../../plots/boosted_it2_fold2.png)
-
-![res3](../../plots/boosted_it2_fold3.png)
-
-![res4](../../plots/boosted_it2_fold4.png)
-
-![res5](../../plots/boosted_it2_fold5.png)
+![res1](../plots/boosted_it2_fold1.png)
