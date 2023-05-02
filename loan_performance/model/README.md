@@ -36,3 +36,7 @@ Although there is a significant difference between being late on a payment for l
 The initial model in `model.ipynb` focused more on building re-usable functions and getting something to work. If it wasn't clear if a feature is useful or it was difficult to deal with, it was simply dropped. This initial model's performance was not that great but along the way I learned more about all the available features and for the second iteration devised the feature selection described in the previous section. Everything else was conveniently re-used and the second model's performance was pretty good. Below is the Precision-Recall curve for one of the 5 folds for the best-performing second iteration model.
 
 ![res1](../plots/boosted_it2_fold1.png)
+
+After investigating the feature importances of the trained models, several leaking features were identified. After removing them, the model performance dropped tremendously.
+
+![res2](../plots/boosted_it3_fold1.png)
